@@ -15,7 +15,7 @@ Swift中只需导入CircleView.swift文件  添加代码
 
 具体使用参考demo中的例子
 
-网络下载的进度要在主线程中调用此方法
+记得要在主线程中调用此方法
 
     dispatch_async(dispatch_get_main_queue(), ^{
          self.circle.progress = progress.fractionCompleted;
